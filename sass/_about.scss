@@ -4,20 +4,20 @@
   margin: 0 auto 160px;
   &-header {
     text-align: center;
-    margin-bottom: 80px;
+    margin: 0 auto 80px;
+    max-width: 1110px;
   }
 
   &-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 100px;
   }
 
   &-item {
-    width: 600px;
-    height: 400px;
     position: relative;
+    border-radius: 20px;
+    overflow: hidden;
   }
 
   &-image {
@@ -27,10 +27,17 @@
 
   &-content {
     position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    text-align: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(23, 27, 65, 0.5);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
   }
 
   &-title {
@@ -38,14 +45,23 @@
     font-size: 32px;
     line-height: calc(48 / 32);
     margin-bottom: 17px;
-    color: white;
   }
-}
 
-.btn--outline {
-  color: white;font-weight: 500;
-  font-size: 22px;
-  line-height: calc(33 / 22);
-  padding: 24px 38px;
-  border: 1px solid;
+  &-student {
+    background: rgba(35, 189, 238, 0.9);
+    color: white;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: calc(33 / 22);
+    padding: 24px 38px;
+  }
+
+  .btn--outline {
+    color: white;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: calc(33 / 22);
+    padding: 24px 38px;
+    border: 1px solid currentColor;
+  }
 }
