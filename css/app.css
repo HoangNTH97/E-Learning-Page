@@ -498,7 +498,7 @@ body {
 .feature .discussions {
   max-width: 1520px;
   padding: 0 15px;
-  margin: 0 auto 160px;
+  margin: 0 auto 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -521,11 +521,78 @@ body {
 }
 .feature-more {
   display: flex;
-  margin: 0 auto 160px;
   align-items: center;
   justify-content: center;
 }
 .feature-more .btn {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 180%;
+  padding: 20px 42px;
+  border: 1px solid #f48c06;
+  color: #f48c06;
+}
+
+.intergration {
+  max-width: 1490px;
+  padding: 0 15px;
+  margin: 0 auto 160px;
+  display: flex;
+  justify-content: space-between;
+  gap: 291px;
+}
+.intergration-brand {
+  min-width: 510px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0 102px;
+}
+.intergration-brand img {
+  margin-bottom: 84px;
+}
+.intergration-content {
+  min-width: 688px;
+}
+.intergration-caption {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 0.2em;
+  color: #525596;
+  margin-bottom: 33px;
+  padding-left: 110px;
+  position: relative;
+}
+.intergration-caption:before {
+  content: "";
+  width: 80px;
+  background-color: #525596;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+.intergration-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 160%;
+  margin-bottom: 30px;
+}
+.intergration-desc {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 180%;
+  margin-bottom: 44px;
+}
+.intergration-more {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+}
+.intergration-more .btn {
   font-weight: 400;
   font-size: 24px;
   line-height: 180%;

@@ -163,7 +163,7 @@
   .discussions {
     max-width: 1520px;
     padding: 0 15px;
-    margin: 0 auto 160px;
+    margin: 0 auto 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -190,15 +190,13 @@
 
   &-more {
     display: flex;
-    margin: 0 auto 160px;
     align-items: center;
     justify-content: center;
     .btn {
       font-weight: 400;
-      font-size: 24px;
+      font-size: 22px;
       line-height: 180%;
-      letter-spacing: 0.02em;
-      padding: 18px 38px;
+      padding: 20px 42px;
       border: 1px solid $secondary-color;
       color: $secondary-color;
     }
